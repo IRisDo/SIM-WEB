@@ -8,21 +8,21 @@
 		<h2>VIETTEL</h2>
 		<ul>
 			{% for list in list_viettel %}
-				<li style="color:blue">{{list}}</li>
+				<li style="color:blue">{{list}} ({{list.status}})</li>
 			{% endfor %}
 		</ul>  
 
 		<h2>VINAPHONE</h2>
 		<ul>
 			{% for list in list_vinaphone %}
-				<li style="color:blue">{{list}}</li>
+				<li style="color:blue">{{list}} ({{list.status}})</li>
 			{% endfor %}
 		</ul> 
 
 		<h2>MOBIFONE</h2>
 		<ul>
 			{% for list in list_mobifone %}
-				<li style="color:blue">{{list}}</li>
+				<li style="color:blue">{{list}} ({{list.status}})</li>
 			{% endfor %}
 		</ul> 
 	</body>
