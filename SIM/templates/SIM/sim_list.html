@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<<head>
 		<title>Bán sim online</title>
 	</head>
+
 	<body>
-		<h1>Danh sách sim</h1>
-		<p>My first paragraph.</p>
+		<h2>VIETTEL</h2>
+		<ul>
+			{% for list in list_viettel %}
+				<li style="color:blue">{{list}}</li>
+			{% endfor %}
+		</ul>  
+
+		<h2>VINAPHONE</h2>
+		<ul>
+			{% for list in list_vinaphone %}
+				<li style="color:blue">{{list}}</li>
+			{% endfor %}
+		</ul> 
+
+		<h2>MOBIFONE</h2>
+		<ul>
+			{% for list in list_mobifone %}
+				<li style="color:blue">{{list}}</li>
+			{% endfor %}
+		</ul> 
 	</body>
 </html>
