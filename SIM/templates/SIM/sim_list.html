@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<<head>
-		<title>Bán sim online</title>
-	</head>
-
-	<body>
+{% extends 'SIM/base.html' %}
+{% block content %}
+		<h1>DANH SÁCH SIM</h1>
 		<h2>VIETTEL</h2>
 		<ul>
 			{% for list in list_viettel %}
@@ -15,7 +11,7 @@
 		<h2>VINAPHONE</h2>
 		<ul>
 			{% for list in list_vinaphone %}
-				<li style="color:blue">{{list}} ({{list.status}})</li>
+				<li style="color:blue"> <a href = "{% url 'payment' pk=list.pk %}">{{list}} ({{list.status}})</a></li>
 			{% endfor %}
 		</ul> 
 
@@ -25,5 +21,4 @@
 				<li style="color:blue">{{list}} ({{list.status}})</li>
 			{% endfor %}
 		</ul> 
-	</body>
-</html>
+{% endblock %}

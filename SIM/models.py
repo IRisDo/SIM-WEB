@@ -18,3 +18,17 @@ class SIM(models.Model):
 	def __str__(self):
 		return self.number
 
+class Guest(models.Model):
+	number_pay = models.CharField(max_length=11)
+	name = models.CharField(max_length=50)
+	number_phone = models.CharField(max_length=11)
+	CMND = models.CharField(max_length=50)
+	address = models.CharField(max_length = 100)
+	def __str__(self):
+		return self.name
+	
+
+		
+
+
+		
